@@ -36,7 +36,7 @@ The touch data format this app understands: a report starting with ID `6`, a fin
 
 ## Install
 
-1. Download `dist/TouchFix.dmg` from this repo, open it, and drag **TouchFix** onto **Applications**.
+1. Download `TouchFix.dmg` from the [latest release](https://github.com/tachlesworks/touchfix/releases/latest), open it, and drag **TouchFix** onto **Applications**.
 2. The app is signed ad hoc, not notarized, so macOS blocks the first launch. Right-click **TouchFix** → **Open** → **Open**. If that is still blocked, run `xattr -dr com.apple.quarantine /Applications/TouchFix.app` once.
 3. Grant **Accessibility** and **Input Monitoring** to TouchFix in System Settings → Privacy & Security, then quit and reopen it. Without them macOS silently drops the clicks.
 4. Choose **Calibrate…** from the menu bar icon and touch the screen's **top-left**, **top-right** and **bottom-right** corners, as you see them now. The prompts appear next to the icon. Calibrate again after rotating the screen. The result is saved in `~/.touchfix`.
